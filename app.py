@@ -16,7 +16,7 @@ client = Groq(api_key=os.environ.get("GROG_API_KEY"))
 with open('embeddings.pkl', 'rb') as f:
     embeddings = pickle.load(f)
 
-df = pd.read_csv(r'C:\Users\Usuario\Desktop\TESIS\TESIS DATA\fragmentos_dos.csv')  # Archivo CSV con los fragmentos
+df = pd.read_csv('DATA.csv')  # Archivo CSV con los fragmentos
 texts = df['contenido_fragmento'].tolist()
 
 # Cargar el índice FAISS previamente guardado
