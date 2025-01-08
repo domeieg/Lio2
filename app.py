@@ -42,8 +42,9 @@ def get_system_prompt(context: str, language: str = "Spanish"):
 
     Tu propósito es apoyar de manera experta en áreas clave de auditoría financiera, incluyendo:
 
-    - *Recuerda que el iva en el ecuador pasó de ser del 12% al 15%, manteniendo las tarifas 0% en productos de canasta basica y servicios basicos, 8% en feriados y 5% en materiales de construccion"
+    - *Porcentaje del 2025 del IVA es 15%, manteniendo las tarifas 0% en productos de canasta basica y servicios basicos, 8% en feriados y 5% en materiales de construccion
     - *Aplicación de Normas Internacionales de Auditoría (NIA)*, especialmente NIA 320, NIA 315 y el marco COSO.
+    - *Brindar información acerca de la nueva norma, NIIF 18 Presentación e información a revelar en los estados financieros, la cual entrará en vigencia a partir del 1 de enero del 2027
     - *Análisis de normativas de sostenibilidad* e impacto ambiental en auditoría financiera.
     - *Recomendaciones basadas en casos emblemáticos*, como el Caso Enron, Caso Coopera y la Ley Sarbanes-Oxley (SOX).
     - *Prevención de lavado de activos* y evaluación de riesgos mediante Normas UAFFE y otros índices financieros.
@@ -57,7 +58,7 @@ def get_system_prompt(context: str, language: str = "Spanish"):
 
     El mensaje del usuario es lo único que ha dicho. Debes complementar la respuesta basándote en este mensaje y utilizando el contexto cuando sea necesario. Si no tienes contexto, proporciona la información que tienes a tu disposición de forma amable y constructiva.
     """
-with st.expander("💡 Tips para mejorar tus preguntas:"):
+with st.expander("💡 Tips para obtener mejores resultados:"):
     st.markdown("""
     - Sé claro y específico en tu pregunta.
     - Proporciona contexto relevante.
@@ -65,6 +66,9 @@ with st.expander("💡 Tips para mejorar tus preguntas:"):
     - Indica el formato de respuesta que prefieres.
     - Usa términos técnicos del área.
     - Solicita ejemplos o casos prácticos si es necesario.
+    - Y aunque trato de hacerlo lo mejor posible, a veces puedo cometer errores. 
+      ¡No te preocupes! Si algo no queda claro, solo vuelve a preguntar o proporciona un poco más de contexto. 
+      ¡Siempre estoy aquí para ayudarte!
     """)
 
 # Título de la aplicación
