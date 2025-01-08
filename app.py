@@ -57,6 +57,15 @@ def get_system_prompt(context: str, language: str = "Spanish"):
 
     El mensaje del usuario es lo único que ha dicho. Debes complementar la respuesta basándote en este mensaje y utilizando el contexto cuando sea necesario. Si no tienes contexto, proporciona la información que tienes a tu disposición de forma amable y constructiva.
     """
+with st.expander("💡 Tips para mejorar tus preguntas:"):
+    st.markdown("""
+    - Sé claro y específico en tu pregunta.
+    - Proporciona contexto relevante.
+    - Haz preguntas concretas y estructuradas.
+    - Indica el formato de respuesta que prefieres.
+    - Usa términos técnicos del área.
+    - Solicita ejemplos o casos prácticos si es necesario.
+    """)
 
 # Título de la aplicación
 st.title("Lio Assistant")
