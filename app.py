@@ -112,10 +112,9 @@ for message in st.session_state.messages:
 if prompt := st.chat_input("¿En qué puedo ayudarte?"):
     # Obtener el contexto relevante del índice FAISS
     context = get_context_from_faiss(prompt, k=3)
-    context_str = " ".join(context)  # Unir los fragmentos de texto para reducir el uso de tokens
 
     # Crear el prompt con el contexto actualizado solo para el sistema
-    system_message = get_system_prompt(context_str, "Spanish")
+    system_message = get_system_prompt(context, "Spanish")
 
     # Agregar la pregunta del usuario al historial de la conversación
     user_message = {
