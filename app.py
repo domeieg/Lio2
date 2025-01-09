@@ -66,7 +66,7 @@ with st.expander("💡 Tips para obtener mejores resultados:"):
     - Indica el formato de respuesta que prefieres.
     - Usa términos técnicos del área.
     - Solicita ejemplos o casos prácticos si es necesario.
-    - Y aunque trato de hacerlo lo mejor posible, a veces puedo cometer errores. 
+    - Aunque trato de hacerlo lo mejor posible, a veces puedo cometer errores. 
       ¡No te preocupes! Si algo no queda claro, solo vuelve a preguntar o proporciona un poco más de contexto. 
       ¡Siempre estoy aquí para ayudarte!
     """)
