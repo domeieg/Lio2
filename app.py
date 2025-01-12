@@ -8,19 +8,23 @@ import json
 from sentence_transformers import SentenceTransformer
 from groq import Groq
 
-# Configuración inicial
-os.environ["GROG_API_KEY"] = "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"
-client = Groq(api_key=os.environ.get("GROG_API_KEY"))
+# # Configuración inicial
+# os.environ["GROG_API_KEY"] = "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"
+# client = Groq(api_key=os.environ.get("GROG_API_KEY"))
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
 
 # Cargar embeddings y datos
-with open('embeddings.pkl', 'rb') as f:
+with open('embeddings2.pkl', 'rb') as f:
     embeddings = pickle.load(f)
 
-df = pd.read_csv('DATA.csv')  # Archivo CSV con los fragmentos
+df = pd.read_csv('DATA2.csv')  # Archivo CSV con los fragmentos
 texts = df['contenido_fragmento'].tolist()
 
 # Cargar el índice FAISS previamente guardado
-index = faiss.read_index('faiss_index.index')  # Carga el índice guardado
+index = faiss.read_index('faiss_index2.index')  # Carga el índice guardado
 
 # Cargar modelo de embeddings para consultas
 model = SentenceTransformer('all-mpnet-base-v2')
