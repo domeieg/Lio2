@@ -7,6 +7,7 @@ import pandas as pd
 import json
 from sentence_transformers import SentenceTransformer
 from groq import Groq
+from openai import OpenAI
 
 # # Configuración inicial
 # os.environ["GROG_API_KEY"] = "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"
