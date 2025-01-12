@@ -55,8 +55,6 @@ def get_system_prompt(context: str, language: str = "Spanish"):
     '''
     {context}
     '''
-
-    El mensaje del usuario es lo único que ha dicho. Debes complementar la respuesta basándote en este mensaje y utilizando el contexto cuando sea necesario. Si no tienes contexto, proporciona la información que tienes a tu disposición de forma amable y constructiva.
     """
 with st.expander("💡 Tips para obtener mejores resultados:"):
     st.markdown("""
