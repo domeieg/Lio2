@@ -9,11 +9,11 @@ from sentence_transformers import SentenceTransformer
 from groq import Groq
 from openai import OpenAI
 
-# # Configuración inicial
-# os.environ["GROG_API_KEY"] = "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"
-# client = Groq(api_key=os.environ.get("GROG_API_KEY"))
+# Configuración inicial
+os.environ["GROG_API_KEY"] = "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"
+client = Groq(api_key=os.environ.get("GROG_API_KEY"))
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 
 
@@ -132,7 +132,7 @@ if prompt := st.chat_input("¿En qué puedo ayudarte?"):
         st.markdown(prompt)  # Mostrar pregunta del usuario
 
     llm_response = client.chat.completions.create(
-        model="gpt-4",
+        model="llama-3.3-70b-versatile",
         messages=[
             {"role": "system", "content": system_message}
         ] + [{"role": m["role"], "content": m["content"]} for m in st.session_state.messages]
