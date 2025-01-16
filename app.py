@@ -133,7 +133,7 @@ if prompt := st.chat_input("¿En qué puedo ayudarte?"):
         st.markdown(prompt)  # Mostrar pregunta del usuario
 
     llm_response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="llama-3.1-8b-instant",
         messages=[
             {"role": "system", "content": system_message}
         ] + [{"role": m["role"], "content": m["content"]} for m in st.session_state.messages]
