@@ -84,9 +84,7 @@ st.write("¡Hola! Soy Lio, tu asistente virtual experto en auditoría financiera
 
 mensaje_inicial={
     "role": "system",
-    "content": """✨ ¡Feliz Año Nuevo! ✨
-Que este año esté lleno de éxitos, alegría y nuevas oportunidades. 🎉
-🌟 Estoy aquí para ayudarte con lo que necesites. ¿Por dónde empezamos hoy? 😊"""
+    "content": """Estoy aquí para ayudarte con lo que necesites. ¿Por dónde empezamos hoy? 😊"""
 }
 
 
